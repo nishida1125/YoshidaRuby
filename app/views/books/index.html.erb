@@ -8,7 +8,9 @@
       <th>Title</th>
       <th>Author</th>
       <th>Published on</th>
+      <th>Price</th>
       <th>Display</th>
+      <th>Created_at</th>
       <th colspan="3"></th>
     </tr>
   </thead>
@@ -19,7 +21,9 @@
         <td><%= book.title %></td>
         <td><%= book.author %></td>
         <td><%= book.published_on %></td>
+        <td><%= book.price %></td>
         <td><%= book.display %></td>
+        <td><%= book.created_at %></td>
         <td><%= link_to 'Show', book %></td>
         <td><%= link_to 'Edit', edit_book_path(book) %></td>
         <td><%= link_to 'Destroy', book, method: :delete, data: { confirm: 'Are you sure?' } %></td>
