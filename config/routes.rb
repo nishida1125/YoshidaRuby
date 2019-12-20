@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :reviews
   root to: 'books#index'
   resources :books,except: :show #Bookの中から詳細ページの削除
   resources :users
